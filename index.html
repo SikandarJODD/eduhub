@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Hub Pvppcoe </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="imgs/main_icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="sass/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.0.3/tilt.jquery.min.js"
+        integrity="sha512-14AZ/DxUrlF26z6v7egDkpJHKyJRn/7ue2BgpWZ/fmqrqVzf4PrQnToy99sHmKwzKev/VZ1tjPxusuTV/n8CcQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <header>
+        <div class="nav_head">
+            <img src="imgs/main_icon.png" alt="main_icon">
+            <h1 class="">Edu<span>Hub</span></h1>
+        </div>
+        <ul class="hidden lg:flex">
+            <li><a href="/">Home</a></li>
+            <li><a href="/">Resources</a></li>
+            <li><a href="/">Project Codes</a></li>
+            <li><a href="/">About Us</a></li>
+        </ul>
+    </header>
+    <section>
+        <div class="main1">
+            <canvas id="canvas-basic"></canvas>
+            <h1>Education Hub <span> Pvppcoe</span></h1>
+            <p id="typequote">
+            </p>
+            <button><a href="/">Explore</a></button>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="main2">
+            <h1>Resources</h1>
+            <div class="main2_arr">
+                <div class="card" data-tilt>
+                    <img src="imgs/cpp.jpg" class="card_img"></img>
+                    <div class="card_title">Compititve Programming</div>
+                </div>
+                <div class="card">
+                    <img src="imgs/frontend-dev.jpg" class="card_img"></img>
+                    <div class="card_title">Frontend</div>
+                </div>
+                <div class="card">
+                    <img src="imgs/uiux.jpg" class="card_img"></img>
+                    <div class="card_title">Designs & Layouts</div>
+                </div>
+                <div class="card">
+                    <img src="imgs/img_backup.jpg" class="card_img"></img>
+                    <div class="card_title">Animations Sutff</div>
+                </div>
+                <div class="card">
+                    <img src="imgs/Data Science.jpg" class="card_img"></img>
+                    <div class="card_title">Gradients & Colors</div>
+                </div>
+                <div class="card">
+                    <img src="imgs/databse.jpg" class="card_img"></img>
+                    <div class="card_title">Js Libararies</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/granim/2.0.0/granim.min.js"
+        integrity="sha512-CmlPTWm5+a1Gt2YSNk2rGZVvbH3Zge6imS7M4/vrhC8d+A1RcehmLxWMqUdv8aEu7pwfTo74EtnrR+8Cf8KdCA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/granim/2.0.0/granim.js"
+        integrity="sha512-kkIHo15i5P7DYFnljV7WfIhciExiBE+B6wOMFIynb0bVg0si8EBkW0waGyzjI1X1dv3GNIGe5QRKDrK2bCRTCw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.0.3/tilt.jquery.min.js"
+        integrity="sha512-14AZ/DxUrlF26z6v7egDkpJHKyJRn/7ue2BgpWZ/fmqrqVzf4PrQnToy99sHmKwzKev/VZ1tjPxusuTV/n8CcQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+
+        $('.card').tilt({
+            glare: true,
+        })
+        var granimInstance = new Granim({
+            element: '#canvas-basic',
+            direction: 'left-right',
+            isPausedWhenNotInView: true,
+            states: {
+                "default-state": {
+                    gradients: [
+                        ['#0061ff', '#60efff'],
+                        ['#028cf3', '#2feaa8'],
+                        ['#93cbf1', '#87f4b5']
+                    ],
+                    transitionSpeed: 3000,
+                    loop: false,
+
+                },
+                "final-state": {
+                    loop: false,
+                }
+            }
+        });
+
+
+
+
+        var typed = new Typed('#typequote', {
+            strings: ["", 'Education is the most powerful weapon which you can use to change the world. ^2000', 'Education is simply the <u> soul of a society </u>  ^1500', 'The great aim of education is not knowledge but <span> action</span> '],
+            typeSpeed: 40,
+            backSpeed: 30,
+            cursorChar: ''
+        });
+    </script>
+</body>
+
+</html>
